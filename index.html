@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css"
+    integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>Vending Machine</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
+      <a class="navbar-brand ms-3" href="#">
+        <img class="invert" src="https://img.icons8.com/ios/512/vending-machine.png" height="45" alt="" loading="lazy">
+        <span class="ms-2">Vending Machine</span>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row justify-content-center text-center">
+        <div class="col-8">
+          <div class="row justify-content-evenly" id="machine">
+            <!-- <div class="col-3 m-4 bg-dark rounded elevation-5 p-2">
+              <div class="overflow-hidden">
+                <img class="vending-icon"
+                  src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                  alt="">
+              </div>
+              <h2 class="text-light">Fries | $3.50</h2>
+              <button onclick="app.itemController.buyItem('${this.name}')" class="btn btn-dark w-100"><i
+                  class="mdi mdi-cart"></i></button>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-4 bg-dark justify-content-center text-light d-flex vh-87">
+          <div class="align-self-center">
+            <button onclick="app.moneyController.addQuarter()" class="btn btn-primary">INSERT DOLLAR</button>
+            <p class="p-5">In machine: $<span id="quarters">0</span></p>
+            <p>Your order:</p>
+            <p id="order"></p>
+            <p>Order total: $<span id="cost"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-light">
+    <div class="text-center no-select">
+      <p><small>Made with 🪫 by me :)</small></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+    integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+  <script src="app/App.js" type="module"></script>
+</body>
+
+</html>

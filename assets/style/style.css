@@ -1,0 +1,16 @@
+/* BASIC STYLES HERE */
+
+.invert {
+  filter: invert(1);
+}
+
+.vh-87 {
+  height: 87.2vh;
+}
+
+.vending-icon {
+  height: 20vh;
+  object-position: 250%;
+  object-fit: cover;
+  scale: 2;
+}
